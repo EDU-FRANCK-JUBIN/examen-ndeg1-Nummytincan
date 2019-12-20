@@ -15,6 +15,6 @@ while 1:
     for i in range(len(fieldNames)):
       if fieldValues[i].strip() == "":
         errmsg = errmsg + ('"%s" est requis\n\n' % fieldNames[i])
-    if errmsg == "": break # no problems found
+    if errmsg == "": break
     fieldValues = eg.multenterbox(errmsg, titre, fieldNames, fieldValues)
 print("Réponse :", fieldValues)
